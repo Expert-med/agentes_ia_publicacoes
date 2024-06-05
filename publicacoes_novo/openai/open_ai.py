@@ -55,9 +55,11 @@ def analyze():
     )
 
     # Execute tasks
-    crew.kickoff()
+    result = crew.kickoff()
 
-    return jsonify({'message': 'Tasks executed successfully'})
+    print('JSON retornado:')
+    print(result)
+    return result
 
 if __name__ == '__main__':
     app.run(debug=True)
