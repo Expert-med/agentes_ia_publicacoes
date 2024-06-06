@@ -8,7 +8,7 @@ import os
 from openai import OpenAI
 import json
 os.environ['OPENAI_MODEL_NAME'] = 'gpt-3.5-turbo'
-os.environ["OPENAI_API_KEY"] = "sk-proj-la3OYkko7KtgExM9XtfUT3BlbkFJUI7chpIYpJgYwfasHZ4c"
+os.environ["OPENAI_API_KEY"] = "sk-proj-Jx4cJCCUfnxdNm32jx3fT3BlbkFJjsv8CiBVIuXLa5RmxSO1"
 os.environ["SERPER_API_KEY"] = "0de6e185f983b1d170902c2030540ff023d3904a" # serper.dev API key
 
 search_tool = SerperDevTool()

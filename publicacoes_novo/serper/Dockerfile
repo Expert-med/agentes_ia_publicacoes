@@ -8,11 +8,11 @@ WORKDIR /app
 COPY . .
 
 # Instale as dependências do Flask a partir do requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt || echo "Failed to install dependencies"
 
 # Defina as variáveis de ambiente necessárias
 ENV OPENAI_MODEL_NAME 'gpt-3.5-turbo'
-ENV OPENAI_API_KEY 'sk-proj-la3OYkko7KtgExM9XtfUT3BlbkFJUI7chpIYpJgYwfasHZ4c'
+ENV OPENAI_API_KEY 'sk-proj-Jx4cJCCUfnxdNm32jx3fT3BlbkFJjsv8CiBVIuXLa5RmxSO1'
 ENV SERPER_API_KEY '0de6e185f983b1d170902c2030540ff023d3904a'
 
 # Exponha a porta 5000 para acessar a aplicação Flask

@@ -13,7 +13,7 @@ firebase_admin.initialize_app(cred, {
     'storageBucket': 'projeto-processos.appspot.com'
 })
 
-os.environ['OPENAI_API_KEY'] = "sk-proj-la3OYkko7KtgExM9XtfUT3BlbkFJUI7chpIYpJgYwfasHZ4c"
+os.environ['OPENAI_API_KEY'] = "sk-proj-Jx4cJCCUfnxdNm32jx3fT3BlbkFJjsv8CiBVIuXLa5RmxSO1"
 openai.api_key = os.environ['OPENAI_API_KEY']
 
 # Inicialização do aplicativo Flask
